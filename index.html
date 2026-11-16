@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="logo">amazon<span>.clone</span></a>
+    <div class="search">
+      <select id="categorySelect"><option value="All">All</option></select>
+      <input id="searchInput" type="text" placeholder="Search products">
+      <button id="searchBtn">🔍</button>
+    </div>
+    <button class="cart-btn" id="cartBtn">🛒 <span id="cartCount">0</span></button>
+  </header>
+
+  <nav class="subnav" id="subnav"></nav>
+
+  <section class="hero" id="hero">
+    <div class="slide active"><h2>Big Savings on Electronics</h2><p>Up to 40% off today</p></div>
+    <div class="slide"><h2>New Fashion Arrivals</h2><p>Style for every season</p></div>
+    <div class="slide"><h2>Books You'll Love</h2><p>Starting at just $9</p></div>
+    <button class="arrow left" id="prev">&#10094;</button>
+    <button class="arrow right" id="next">&#10095;</button>
+  </section>
+
+  <main>
+    <h2 class="section-title" id="sectionTitle">Featured Products</h2>
+    <div class="grid" id="productGrid"></div>
+  </main>
+
+  <aside class="cart" id="cart">
+    <div class="cart-head"><h3>Your Cart</h3><button id="closeCart">✕</button></div>
+    <div id="cartItems"></div>
+    <div class="cart-foot">
+      <p>Total: <strong id="cartTotal">$0.00</strong></p>
+      <button class="checkout" id="checkout">Proceed to Checkout</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <footer><p>Demo project for learning. Not affiliated with Amazon.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
